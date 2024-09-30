@@ -1,3 +1,42 @@
+UPDATE - Cliente
+# Sistema de Calificación de Lociones - Interfaz de Usuario
+
+## Descripción General
+
+El Sistema de Calificación de Lociones es una aplicación de escritorio diseñada para proporcionar una interfaz de usuario intuitiva y fácil de usar para la gestión y calificación de lociones. Esta interfaz está desarrollada utilizando la biblioteca Tkinter de Python, lo que garantiza una experiencia de usuario consistente en diferentes plataformas.
+
+## Mejoras en la Usabilidad
+
+1. **Diseño Simplificado**: La interfaz presenta un diseño minimalista y directo, reduciendo la curva de aprendizaje para nuevos usuarios.
+
+2. **Organización Lógica**: Los elementos de la interfaz están organizados de manera secuencial, siguiendo el flujo natural de las operaciones (agregar, calificar, obtener promedio, listar).
+
+3. **Feedback Inmediato**: Cada acción del usuario genera una respuesta visible en el área de resultados, proporcionando confirmación inmediata de las operaciones realizadas.
+
+4. **Manejo de Errores**: Se implementan mensajes de advertencia para guiar al usuario en caso de entradas incorrectas o campos faltantes.
+
+5. **Flexibilidad**: La interfaz permite realizar múltiples operaciones sin necesidad de navegar entre diferentes ventanas.
+
+## Clase Principal: App
+
+La clase `App` es el componente central de la interfaz de usuario. A continuación, se detallan sus atributos y métodos principales:
+
+### Atributos
+
+- `cliente`: Instancia de la clase `Cliente` para la comunicación con el servidor.
+- `master`: Ventana principal de la aplicación (instancia de `tk.Tk`).
+- `frame`: Frame principal que contiene todos los widgets.
+- `tipos_perfume`: Lista de tipos de perfumes disponibles.
+- Varios `Entry` y `StringVar` para la entrada de datos del usuario.
+- `resultado_text`: Área de texto para mostrar los resultados de las operaciones.
+
+### Métodos
+
+#### `__init__(self, master)`
+
+Inicializa la aplicación y configura la ventana principal.
+
+
 # Sistema de Calificación de Lociones - Documentación
 
 ## Introducción
@@ -72,42 +111,6 @@ Para ejecutar el programa, use el siguiente comando en la terminal:
 
 ```bash
 python main.py
-
-# Sistema de Calificación de Lociones - Interfaz de Usuario
-
-## Descripción General
-
-El Sistema de Calificación de Lociones es una aplicación de escritorio diseñada para proporcionar una interfaz de usuario intuitiva y fácil de usar para la gestión y calificación de lociones. Esta interfaz está desarrollada utilizando la biblioteca Tkinter de Python, lo que garantiza una experiencia de usuario consistente en diferentes plataformas.
-
-## Mejoras en la Usabilidad
-
-1. **Diseño Simplificado**: La interfaz presenta un diseño minimalista y directo, reduciendo la curva de aprendizaje para nuevos usuarios.
-
-2. **Organización Lógica**: Los elementos de la interfaz están organizados de manera secuencial, siguiendo el flujo natural de las operaciones (agregar, calificar, obtener promedio, listar).
-
-3. **Feedback Inmediato**: Cada acción del usuario genera una respuesta visible en el área de resultados, proporcionando confirmación inmediata de las operaciones realizadas.
-
-4. **Manejo de Errores**: Se implementan mensajes de advertencia para guiar al usuario en caso de entradas incorrectas o campos faltantes.
-
-5. **Flexibilidad**: La interfaz permite realizar múltiples operaciones sin necesidad de navegar entre diferentes ventanas.
-
-## Clase Principal: App
-
-La clase `App` es el componente central de la interfaz de usuario. A continuación, se detallan sus atributos y métodos principales:
-
-### Atributos
-
-- `cliente`: Instancia de la clase `Cliente` para la comunicación con el servidor.
-- `master`: Ventana principal de la aplicación (instancia de `tk.Tk`).
-- `frame`: Frame principal que contiene todos los widgets.
-- `tipos_perfume`: Lista de tipos de perfumes disponibles.
-- Varios `Entry` y `StringVar` para la entrada de datos del usuario.
-- `resultado_text`: Área de texto para mostrar los resultados de las operaciones.
-
-### Métodos
-
-#### `__init__(self, master)`
-
-Inicializa la aplicación y configura la ventana principal.
+```
 
 
